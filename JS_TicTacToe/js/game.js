@@ -5,6 +5,7 @@ window.onload = function() {
 
     createGameField();
     addCellClickHandler();
+    // console.log(testWinDirections());
 
     function createGameField() {
         // create game field
@@ -60,12 +61,19 @@ window.onload = function() {
     return result;
 	}
 
-	function testCompareVerticalHorizontalDirections (cellValue, startIndex, endIndex, step) {
+	// function testWinDirections (cellValue, firstIndex, secondIndex, thirdIndex) {
+	// 	cellValue = 'x';
 
-		// for (var i = 0; i < MAX_CELL_NUMBER; i+=step) {
-		// }
-		// return true;
-    }
+	// 	cells[0].innerHTML = 'x';  
+	// 	cells[1].innerHTML = '0';  
+	// 	cells[2].innerHTML = '0';  
+	// 	cells[3].innerHTML = '0';  
+	// 	cells[4].innerHTML = 'x';  
+	// 	cells[5].innerHTML = '0';  
+	// 	cells[6].innerHTML = '0';  
+	// 	cells[7].innerHTML = '0';  
+	// 	cells[8].innerHTML = 'x';
+ //    }
 
     /**
      this function is checking if all сells have the value, equal to cellValue parametr.
@@ -86,7 +94,7 @@ window.onload = function() {
     	return result;
     }
 
-    //tests all directions for a winner	
+    // tests all directions for a winner	
     function checkWinner(cellValue) {
     	console.log("function checkWinner");
         console.log('cellValue', cellValue);

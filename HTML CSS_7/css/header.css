@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url(../fonts/leaguegothic-regular-webfont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.site-size {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+		/*	header-top	*/
+
+header {
+	background-image: url(../img/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header-top__logo {
+	padding-top: 70px;
+	display: inline-block;
+}
+
+		/*	MENU	*/
+
+.header-top__menu {
+	padding-top: 75px;
+	float: right;
+}
+
+.menu_item {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.menu_item:last-child {
+	margin-right: 0px;
+}
+
+.menu_link {
+	text-decoration: none;
+	font-size: 24px;
+	color: white;
+	font-family: 'League Gothic', sans-serif;
+	color: white;
+	text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.menu_link:hover {
+	border-bottom: 2px solid #edbfff;
+	text-decoration: none;
+	color: white;
+}
+
+		/*	header-content	*/
+
+.header-content {
+
+	clear: both;
+	margin-top: 75px;
+	display: block;
+	min-height: 400px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.header-content__article {
+	width: 55%;
+	float: left;
+	padding-top: 83px;
+}
+
+.slider__title {
+	color: white;
+	font-size: 60px;
+	font-family: 'League Gothic', sans-serif;
+	text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.slider__under-title {
+	font-size: 32px;
+	color: #edbfff;
+	font-family: 'League Gothic', sans-serif;
+	text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.slider__article {
+	color: white;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: 'Open Sans';
+}
+
+.header-content__photo {
+	position: absolute;
+	right: 0px;
+	top: -15px;
+	padding-right: 75px;
+}
+
+		/*	header-slider	*/
+
+.header-slider__round-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.header-slider__round {
+	float: right;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	padding-right: 85px;
+}
+
+.slider__list {
+	float: left;
+	margin-left: 5px;
+}

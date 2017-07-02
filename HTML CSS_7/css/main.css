@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url(../fonts/leaguegothic-regular-webfont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.site-size {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.flex-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+		/*	MAIN	*/
+
+		/*	article_1	*/
+
+.main-articles-top {
+	background: linear-gradient(to top, #322539, #745083);
+	border-top: 1px solid black;
+}
+
+.article {
+	padding: 80px 0 80px 0;
+	width: 30%;
+	display: block;
+}
+
+/* icon-sprite 	-->	*/
+
+.article__sprite-container {
+	height: 100%;
+	padding-top: 5px;
+	padding-right: 22px;
+	float: left;
+}
+
+.article__icon-1 {
+	display: block;
+	width: 33px;
+	height: 33px;
+	background-image: url(../img/icon_set.png);
+	background-position: 0 0;
+}
+
+.article__icon-2 {
+	display: block;
+	width: 33px;
+	height: 33px;
+	background-image: url(../img/icon_set.png);
+	background-position: 66px 0;
+}
+
+.article__icon-3 {
+	display: block;
+	width: 33px;
+	height: 33px;
+	background-image: url(../img/icon_set.png);
+	background-position: 33px 0;
+}	/* icon-sprite 	end!	*/
+
+
+.article__title {
+	font-size: 30px;
+	color: white;
+	font-family: 'League Gothic', sans-serif;
+}
+
+.article__text {
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+	font-family: 'Open Sans';
+}
+
+.article__read-more {
+	float: right;
+	padding-top: 25px;
+	text-decoration: none;
+
+	font-size: 20px;
+	color: white;
+	font-family: 'League Gothic', sans-serif;
+}
+
+.article__read-more:hover {
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+}
+
+		/*	article_2	*/
+
+.main-articles-block {	/*	grey_bg	*/
+	background-color: #f9f9f9;
+}
+
+.main-articles-block__flex {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-article {
+	width: 50%;
+	display: block;
+	padding-top: 100px;
+}
+
+.block-article__white_bg {
+	margin-left: 30px;
+	position: relative;
+	display: block;
+	width: 429px;
+	height: 294px;
+	background-image: url(../img/back_white_article.png);
+}
+
+.block-article__img-container {
+	position: absolute;
+	left: -25px;
+	top: 20px;
+}
+.block-article__content {
+	padding: 33px 0 0 40px;
+}
+
+.block-article__title-1 {
+	font-size: 30px;
+	color: #454545;
+	text-transform: uppercase;
+	font-family: 'League Gothic', sans-serif;
+}
+
+.block-article__title-2 {
+	font-size: 30px;
+	color: #edbfff;
+	text-transform: uppercase;
+	font-family: 'League Gothic', sans-serif;
+}
+
+.block-article__text {
+	width: 85%;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+	font-family: 'Open Sans';
+}
+
+.post-article {
+	width: 50%;
+	display: block;
+	padding-top: 130px;
+}
+
+.main-article-block__slider-container { /* slider */
+	position: relative;
+	overflow: hidden;
+}
+
+.main-article-block__slider {
+	float: left;
+	padding-left: 40%;
+	padding-bottom: 70px;
+} 
+
+/*	block-post	*/
+
+.post-article__title {
+	font-size: 30px;
+	color: #454545;
+	text-transform: uppercase;
+	font-family: 'League Gothic', sans-serif;
+}
+
+.post-article__container {
+	padding-top: 15px;
+}
+
+.post-article__img-container {
+	vertical-align: middle;
+	display: inline-block;
+}
+.post-article__text-container {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.post-article__title_small {
+	font-size: 16px;
+	font-weight: bolder;
+	color: black;
+	font-family: 'Open Sans';
+}
+
+.post-article__text {
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+	font-family: 'Open Sans';
+}
+
+.main-article__read-more {
+	float: right;
+	font-size: 20px;
+	color: #454545;
+	font-family: 'League Gothic', sans-serif;
+}
+
+		/*	article_3	*/
+
+.main-articles-bottom {
+	background-color: #ececec;
+}
+
+.article--bottom .article__title {
+	color: #454545;
+}
+
+.article--bottom .article__text {
+	color: #787878;
+}
+
+.article--bottom .article__read-more {
+	color: #454545;
+}
+
+		/*	Logo_slider	*/
+
+.flex-container-logo_slider {
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.logo-block {
+	padding-top: 25px;
+	padding-bottom: 30px;
+}
+
+.main-logos-slider {
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #d8d8d8;
+	border-top: 1px solid #d8d8d8;
+}

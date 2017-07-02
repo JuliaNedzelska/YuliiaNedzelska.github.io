@@ -1,0 +1,239 @@
+body {
+	background-image: url('../img/background.png');
+	font-family: Tahoma;
+	line-height: 24px;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 10px;
+	color: #424c43;
+}
+
+.main {
+	width: 1000px;
+	background-color: #fff;
+	margin: auto;
+	position: relative;
+	min-height: 100%;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.5);
+}
+
+		/* HEADER */
+
+.logo {
+	position: relative;
+	height: 164px;
+	float: left;
+	padding: 10px 0 0 30px;
+}
+
+.logo img {
+	/*position: absolute;*/
+}
+
+.logo p {
+	position: absolute;
+	margin-left: 22%;
+	margin-top: 30%;
+	font-size: 12px;
+	color: #128aa7;
+}
+
+.contacts {
+	padding: 10px 30px 0 0px;
+	display: block;
+	float: right;
+	font-size: 12px;
+	line-height: 20px;
+	color: #128aa7;
+}
+
+.contacts h2 {
+	font-weight: bold;
+	font-size: 12px;
+	color: #128aa7;
+}
+
+.flags {
+	clear: right;
+	float: right;
+	display: inline-flex;
+	min-height: 65px;
+	margin:10px 10px 0 0; 
+}
+
+.flags ul {
+	text-align: center;
+}
+
+.flags li {
+	margin-right: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.flags li p {
+	font-size: 10px;
+	color: #128aa7;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.flags li a {
+	display: inline-flex;
+	font-size: 10px;
+	color: #128aa7;
+	text-decoration: underline;
+}
+		
+		/* BANNER */
+
+.img {
+	border-bottom: 1px solid #128aa7;
+	border-top: 1px solid #128aa7;
+	width: 100%;
+}
+
+		/* MENU */
+
+#menu {
+    position:relative;
+    display:block;
+    width:100%;
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
+
+#menu ul {
+     position:relative;
+     display:block;
+     margin:0px;
+     padding:0px;
+     width:100%;
+     height: 30px;
+     height:auto;
+     list-style:none;
+     background:#333;
+
+    -webkit-box-shadow: 0px 5px 9px -2px rgba(0,0,0,0.85);
+	-moz-box-shadow: 0px 5px 9px -2px rgba(0,0,0,0.85);
+	box-shadow: 0px 5px 9px -2px rgba(0,0,0,0.85);
+}
+
+#menu ul::after {
+        display:block;
+        width:100%;
+        clear:both;
+        content:" ";
+}
+
+#menu ul li {
+            position:relative;
+            display:block;
+            float:left;
+            width:auto;
+            height:auto;
+}
+
+#menu ul li a {
+                display:block;
+                padding:9px 25px 0px 25px;
+                font-size: 14px;
+                font-family: Tahoma, sans-serif;
+                color: white;
+                line-height:1.3em;
+                text-decoration:none;
+                height:36px;
+                box-sizing:border-box;
+            }
+            #menu ul li > a:hover, #menu ul li:hover > a{
+                background:#222;
+                color: white;
+            }
+
+
+#menu ul li ul{
+    position:absolute;
+    top:36px;
+    left:0px;
+    display:none;
+    width:200px;
+    background:#333;
+    -webkit-box-shadow: 0px 5px 9px -2px rgba(0,0,0,0.85);
+	-moz-box-shadow: 0px 5px 9px -2px rgba(0,0,0,0.85);
+	box-shadow: 0px 5px 9px -2px rgba(0,0,0,0.85);
+}
+#menu ul li:hover ul{display:block;} /*эта строчка реализует механизм выпадения*/
+
+#menu ul li ul li {
+        float:none;
+        width:100%;
+    }
+
+#menu ul li ul li a {
+            display:block;
+            text-transform:none;
+            height:auto;
+            padding:7px 25px;
+            width:100%;
+            box-sizing:border-box;
+        }
+        #menu ul li ul li:first-child a {border-top:0px;}
+        #menu ul li ul li a:hover {
+            background: #222;
+            color: white;
+        }
+
+		/* CONTENT */
+
+.content {
+	display: block;
+	background-color: white;
+	width: 100%;
+}
+
+.info {
+	float: left;
+	height: 460px;
+	width: 208px;
+	background-color: #edeef0;
+	border-right: 1px solid #c7cacf;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 14px;
+	line-height: 24px;
+	color: #424c43;
+}
+
+.news {
+	float: right;
+	height: 460px;
+	width: 208px;
+	background-color: #edeef0;
+	border-left: 1px solid #c7cacf;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 14px;
+	line-height: 24px;
+	color: #424c43;
+}
+
+.bottom_border {
+	clear: both;
+	border-bottom: 3px solid black;
+}
+
+		/* FOOTER */
+
+.footer {
+	clear: both;
+	margin: 10px auto;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: white;
+}

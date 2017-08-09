@@ -1,0 +1,23 @@
+body {
+	width: 800px;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 150px;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+
+	font-size: 70px;
+	padding: 10px 50px 10px 50px;
+	border-radius: 15px;
+	background-color: #749c0b;
+	border: none;
+	color: white;
+}

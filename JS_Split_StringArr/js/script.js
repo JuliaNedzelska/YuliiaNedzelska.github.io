@@ -79,43 +79,36 @@ function searchCountOfSplitParts(string, symb) {
 function testSplit() {
 	var testResult = 0;
 	
-	testResult = split('a b', ' ');
+	if (true) {
+		testResult = split('a b', ' ');
 		if (testResult.length == 2 && testResult[0] == 'a' && testResult[1] == 'b') {
-			console.log('Func testSplit: PASS' );
-			console.log(' 	_________________');
+			console.log('Func testSplit: PASS\n 	_________________' );
 		} else {
-			console.log('Func testSplit: FAIL:');
-			console.log(' 	_________________');
+			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
 
-	testResult = split('SpaceAtTheEnd    ', ' ');
+		testResult = split('SpaceAtTheEnd    ', ' ');
 		if (testResult.length == 1 && testResult[0] == 'SpaceAtTheEnd') {
-			console.log('Func testSplit: PASS' );
-			console.log(' 	_________________');
+			console.log('Func testSplit: PASS\n 	_________________' );
 		} else {
-			console.log('Func testSplit: FAIL:');
-			console.log(' 	_________________');
+			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
 
-	testResult = split(' Word ', ' ');
+		testResult = split(' Word ', ' ');
 		if (testResult.length == 1 && testResult[0] == 'Word') {
-			console.log('Func testSplit: PASS' );
-			console.log(' 	_________________');
+			console.log('Func testSplit: PASS\n 	_________________' );
 		} else {
-			console.log('Func testSplit: FAIL:');
-			console.log(' 	_________________');
+			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
 
-	testResult = split('   ', ' ');
+		testResult = split('   ', ' ');
 		if (testResult.length == 0) {
-			console.log('Func testSplit: PASS' );
-			console.log(' 	_________________');
+			console.log('Func testSplit: PASS\n 	_________________' );
 		} else {
-			console.log('Func testSplit: FAIL:');
-			console.log(' 	_________________');
+			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
 
-	testResult = split('A few days before she turned 61', ' ');
+		testResult = split('A few days before she turned 61', ' ');
 		if (testResult.length == 7
 			&& testResult[0] == 'A'
 			&& testResult[1] == 'few'
@@ -124,12 +117,11 @@ function testSplit() {
 			&& testResult[4] == 'she'
 			&& testResult[5] == 'turned'
 			&& testResult[6] == '61') {
-			console.log('Func testSplit: PASS' );
-			console.log(' 	_________________');
+			console.log('Func testSplit: PASS\n 	_________________' );
 		} else {
-			console.log('Func testSplit: FAIL:');
-			console.log(' 	_________________');
+			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
+	}
 }
 
 

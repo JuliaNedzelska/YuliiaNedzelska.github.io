@@ -9,40 +9,39 @@ function getSubstringPosition(string, substring) {
 
 function testGetSubstringPosition() {
 	var testResult = 0;
+	var testValue = 0;
 
 	if (true) {
 
 		testResult = getSubstringPosition('String', 'St');
 		if (testResult == 0) {
-			continue;
-		}
+			testValue = 1;
+		} else return testValue = -1;
 
 		testResult = getSubstringPosition('  String', ' St');
 		if (testResult == 2) {
-			continue;
-		}
+			testValue = 1;
+		} else return testValue = -1;
 
 		testResult = getSubstringPosition('lalala', 'la');
 		if (testResult == 0) {
-			continue;
-		}
+			testValue = 1;
+		} else return testValue = -1;
 
 		testResult = getSubstringPosition('anotherString', 'not');
 		if (testResult == null) {
-			continue;
-		}
+			testValue = 1;
+		} else return testValue = -1;
 
 		testResult = getSubstringPosition('    ', 'do');
 		if (testResult == null) {
-			continue;
-		}
+			testValue = 1;
+		} else return testValue = -1;
 
 		testResult = getSubstringPosition('AB', 'CCCCC');
 		if (testResult == null) {
-			continue;
-		}
-		return console.log('Func testSplit: PASS\n _________________' );
+			testValue = 1;
+		} else return testValue = -1;
 	}
-
-	else return console.log('Func testSplit: FAIL\n _________________' );
+	return testValue;
 }

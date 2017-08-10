@@ -78,32 +78,33 @@ function searchCountOfSplitParts(string, symb) {
 */
 function testSplit() {
 	var testResult = 0;
+	var PASS = console.log('Func testSplit: PASS\n 	_________________');
 	
-	if (true) {
+	if (flag) {
 		testResult = split('a b', ' ');
 		if (testResult.length == 2 && testResult[0] == 'a' && testResult[1] == 'b') {
-			console.log('Func testSplit: PASS\n 	_________________' );
+			flag = true;
 		} else {
 			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
 
 		testResult = split('SpaceAtTheEnd    ', ' ');
 		if (testResult.length == 1 && testResult[0] == 'SpaceAtTheEnd') {
-			console.log('Func testSplit: PASS\n 	_________________' );
+			flag = true;
 		} else {
 			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
 
 		testResult = split(' Word ', ' ');
 		if (testResult.length == 1 && testResult[0] == 'Word') {
-			console.log('Func testSplit: PASS\n 	_________________' );
+			flag = true;
 		} else {
 			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
 
 		testResult = split('   ', ' ');
 		if (testResult.length == 0) {
-			console.log('Func testSplit: PASS\n 	_________________' );
+			flag = true;
 		} else {
 			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
@@ -117,10 +118,11 @@ function testSplit() {
 			&& testResult[4] == 'she'
 			&& testResult[5] == 'turned'
 			&& testResult[6] == '61') {
-			console.log('Func testSplit: PASS\n 	_________________' );
+			flag = true;
 		} else {
 			return console.log('Func testSplit: FAIL\n 	_________________');
 		}
+		return console.log('Func testSplit: PASS\n 	_________________');
 	}
 }
 

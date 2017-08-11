@@ -72,12 +72,17 @@ function testGetSubstringPosition() {
 			testValue = 1;
 		} else return testValue = -1;
 
+		testResult = getSubstringPosition('If she can do both', 'she');
+		if (testResult == 3) {
+			testValue = 1;
+		} else return testValue = -1;
+
 		testResult = getSubstringPosition('DDDDDD', 'VVVVVVVVVVV');
 		if (testResult == null) {
 			testValue = 1;
 		} else return testValue = -1;
 
 	}
-	console.log('TestVale', testValue);
+	console.log('TestValue', testValue);
 	return testValue;
 }

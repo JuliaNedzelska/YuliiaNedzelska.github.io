@@ -31,8 +31,16 @@ function runGame() {
 		console.log('	timer', timer);
 		if (timer == 0) {
 		clearInterval(startGame);
+		stopGame();
+
 		console.log('	=========');
 		console.log('	GAME OVER');
 		}
 	}, 1000);
+}
+
+function stopGame() {
+	console.log('Func stopGame');
+	game.classList.add('gameOver');
+	console.log('	game', game);
 }

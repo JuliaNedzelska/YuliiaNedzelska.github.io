@@ -8,14 +8,16 @@ function main() {
 //game field creating
 function createGameField() {
     console.log('Func createGameField');
-    for (var i = 0; i < 7; i++) {
-    	document.getElementById('game').innerHTML += '<div class="row"></div>';
-        for (var j = 0; j < 7; j++) {
-        	document.getElementsByClassName('row')[i].innerHTML += '<div class="cell"></div>';
+    var gameField = [];
+    var gameFieldLength = 7;
+    for (var i = 0; i < gameFieldLength; i++) {
+    	gameField[i] = [];
+        for (var j = 0; j < gameFieldLength; j++) {
+        	gameField[i][j] = 0;
         }
     }
-    console.log('	gameField', game);
-    setSnakeOnField();
+    console.log('	gameField', gameField);
+    setSnakeOnField(gameField);
     runGame();
 }
 
@@ -39,19 +41,13 @@ function runGame() {
 	}, 1000);
 }
 
-function setSnakeOnField() {
-	var row = document.getElementsByClassName('row');
-	var cell = document.getElementsByClassName('cell');
-	var snakeHead = game[5];
+function setSnakeOnField(gameField) {
+	console.log('Func setSnakeOnField');
+
+	var snakeDirection = 'straight';
+	var snakeHead = gameField[length/2][length/2];
+
 	console.log('	snakeHead', snakeHead);
-	var snakeDirection = 0;
-}
-
-function goLeft(snakeHeadCoords, previousDirection) {
-	if (!goRight()) {
-
-	}
-	return snakeHeadCoords;
 }
 
 /*

@@ -1,4 +1,5 @@
 
+window.addEventListener('keydown', getDirection);
 main();
 
 function main() {
@@ -17,7 +18,6 @@ function createGameField() {
         }
     }
     console.log('	gameField', gameField);
-    setSnakeOnField(gameField);
     runGame();
 }
 
@@ -40,14 +40,40 @@ function runGame() {
 		}
 	}, 1000);
 }
+function snakeMove(gameField) {
+	var snakeHead = [[0][1]];
+	var snakeBody = [[0][0], [0][1]];
+	var snakeLength = 2;
+	return snakeHead;
+} 
 
-function setSnakeOnField(gameField) {
-	console.log('Func setSnakeOnField');
+function getDirection(event) {
+	console.log('Func getDirection');
+	var direction = [];
 
-	var snakeDirection = 'straight';
-	var snakeHead = gameField[length/2][length/2];
+	switch (event.keyCode) {
+		case 37: 
+			console.log('	Left direction - keyCode', event.keyCode);
+			direction = [[0][-1]];
+			break;
 
-	console.log('	snakeHead', snakeHead);
+		case 39: 
+			console.log('	Right direction - keyCode:', event.keyCode);
+			direction = [[0][1]];
+			break;
+
+		case 38: 
+			console.log('	Top direction - keyCode', event.keyCode);
+			direction = [[-1][0]];
+			break;
+
+		case 38: 
+			console.log('	Bottom direction - keyCode', event.keyCode);
+			direction = [1][0];
+			break;
+	}
+	console.log('	direction', direction);
+	return direction;
 }
 
 /*

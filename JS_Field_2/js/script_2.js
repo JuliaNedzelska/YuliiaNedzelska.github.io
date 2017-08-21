@@ -3,10 +3,15 @@ window.addEventListener('keydown', getDirection);
 var direction = [0, 1];
 var gameFieldSize = 5;
 
+//gameField, snakeBody, makeFood ---> init
 var gameField = fillGameField(gameFieldSize);
 var snakeBody = snakeInit(gameField);
-
 makeFood(gameField, gameFieldSize);
+
+//start
+var startGame = setInterval(function() {
+	checkSnakeHeadPosition(gameField, snakeBody, direction);
+}, 1000);
 
 //game field creating
 function fillGameField(gameFieldSize) {
@@ -42,6 +47,8 @@ function snakeInit(gameField) {
 
 /*
  creates food-cell
+ @gameField
+ @gameFieldSize
 */
 function makeFood(gameField, gameFieldSize) {
 	console.log('Func getDirection');
@@ -55,6 +62,15 @@ function makeFood(gameField, gameFieldSize) {
 	else makeFood(gameField, gameFieldSize);
 }
 
+/*
+ this function compare current cell for = 0 or != 0
+ if current cell = 0 or snake continues to move,
+ if cell = 2 it means that snake found food cell
+ if cell != 0 and != 2 - than game over
+ @gamefFeld - two-dimensional array, field
+ @snakeBody - two-dimensional array
+ @direction
+*/
 function checkSnakeHeadPosition(gameField, snakeBody, direction) {
 	console.log('Func checkSnakeHeadPosition');
 
@@ -68,7 +84,8 @@ function checkSnakeHeadPosition(gameField, snakeBody, direction) {
 	// console.log('	snakeBody', snakeBody);
 	// console.log('	snakeTail', snakeTail);
 	// console.log('	prevSnakeHead', prevSnakeHead);
-	// console.log('	newSnakeHead', newSnakeHead);
+	console.log('	head position', newSnakeHead);
+
 	if (gameField[newSnakeHead[0]][newSnakeHead[1]] == 0) {
 		snakeBody.push(snakeMove(gameField, snakeTail, newSnakeHead));
 		snakeBody.shift();
@@ -81,24 +98,33 @@ function checkSnakeHeadPosition(gameField, snakeBody, direction) {
 	else gameOver();
 }
 
+/*
+ moves the snake if current cell = 0 
+ @gameField
+ @snakeTail - one-dimensional array, first element of snakeBody array
+ @snakeHead - one-dimensional array, last element of snakeBody array
+*/
 function snakeMove(gameField, snakeTail, snakeHead) {
 	gameField[snakeHead[0]][snakeHead[1]] = 1;
 	gameField[snakeTail[0]][snakeTail[1]] = 0;
 	return snakeHead;
 }
 
+/*
+ if current cell = 2/cell food - we increase snakeBody by 1 cell
+  @snakeTail
+  @snakeHead
+*/
 function snakeEat(gameField, snakeHead) {
 	gameField[snakeHead[0]][snakeHead[1]] = 1;
+	makeFood(gameField, gameFieldSize);
 	return snakeHead;
 }
 
-var startGame = setInterval(function() {
-	console.log('	direction', direction);
-	checkSnakeHeadPosition(gameField, snakeBody, direction);
-}, 1000);
-
 /*
- this function 
+ this function defined direction by listening the event of 4 buttons
+ left arrow, right arrow, up arrow, down arrow
+ If the event does not occur then we use default value of direction specified at the beginning of the code
 */
 function getDirection(event) {
 	console.log('	event.keyCode', event.keyCode);
@@ -117,6 +143,9 @@ function getDirection(event) {
 	return direction;
 }
 
+/*
+ this fuction finishes the game by clearing interval 'startGame'
+*/
 function gameOver() {
 	console.log('Func gameOver');
 	clearInterval(startGame);

@@ -1,0 +1,131 @@
+body {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #282828;
+}
+p {
+	font-family: "Bender";
+	font-size: 20pt;
+	color: white;
+}
+
+.wrapper {
+	margin-top: 5%;
+	position: relative;
+}
+
+.help-title {
+	width: 300px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.machine {
+	position: relative;
+	margin: 0 auto;
+	width: 641px;
+	height: 773px;
+	background-image: url("../PNG/machine.png");
+}
+
+.water-field {
+	display: block;
+}
+
+#title-mineral {
+	position: absolute;
+	margin: 418px 0 0 68px;
+	width: 284px;
+	height: 53px;
+	background: url(../PNG/title_mineral_sprite.png) 0 0;
+}
+
+#title-mineral-active {
+	position: absolute;
+	margin: 418px 0 0 68px;
+	width: 284px;
+	height: 53px;
+	background: url(../PNG/title_mineral_sprite.png) 0 72px;
+}
+
+.push-button-mineral {
+	position: absolute;
+	margin: 415px 0 0 350px;
+}
+
+#title-sweet {
+	position: absolute;
+	margin: 474px 0 0 68px;
+	width: 284px;
+	height: 53px;
+	background: url(../PNG/title_sweet_sprite.png) 0 0;
+}
+
+#title-sweet-active {
+	position: absolute;
+	margin: 474px 0 0 68px;
+	width: 284px;
+	height: 53px;
+	background: url(../PNG/title_sweet_sprite.png) 0 72px;
+}
+
+
+.push-button-sweet {
+	position: absolute;
+	margin: 472px 0 0 350px;
+}
+
+#glass {
+	position: absolute;
+	display: block;
+	margin-top: 92%;
+	margin-left: 42%;
+	width: 101px;
+	height: 108px;
+	background: url(../PNG/glasses_sprite.png) 0 0;
+}
+
+#glassMineralWater {
+	position: absolute;
+	display: block;
+	margin-top: 92%;
+	margin-left: 42%;
+	width: 101px;
+	height: 108px;
+	background: url(../PNG/glasses_sprite.png) 0 218px;
+}
+
+#glassSweetlWater {
+	position: absolute;
+	display: block;
+	margin-top: 92%;
+	margin-left: 42%;
+	width: 101px;
+	height: 108px;
+	background: url(../PNG/glasses_sprite.png) 0 109px;
+}
+
+.coins {
+	display: block;
+	float: left;
+	margin: 10% 0 0 5%;
+}
+
+#coin-1 {
+	width: 134px;
+	height: 134px;
+	background: url(../PNG/1k.png);
+}
+
+#coin-2 {
+	width: 134px;
+	height: 134px;
+	background: url(../PNG/2k.png);
+}
+
+#coin-3 {
+	width: 134px;
+	height: 134px;
+	background: url(../PNG/3k.png);
+}
+

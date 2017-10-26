@@ -75,7 +75,7 @@ p {
 	margin: 472px 0 0 350px;
 }
 
-#glass {
+#waterGlass {
 	position: absolute;
 	display: block;
 	margin-top: 92%;
@@ -111,21 +111,44 @@ p {
 	margin: 10% 0 0 5%;
 }
 
-#coin-1 {
+.coin1 {
+	margin-bottom: 10%;
 	width: 134px;
 	height: 134px;
 	background: url(../PNG/1k.png);
 }
 
-#coin-2 {
+.coin1 .dis {
+	margin-bottom: 10%;
+	width: 134px;
+	height: 134px;
+	background: url(../PNG/dis_k.png);
+}
+
+.coin2 {
+	margin-bottom: 10%;
 	width: 134px;
 	height: 134px;
 	background: url(../PNG/2k.png);
 }
 
-#coin-3 {
+.coin2 .dis {
+	margin-bottom: 10%;
+	width: 134px;
+	height: 134px;
+	background: url(../PNG/dis_k.png);
+}
+
+.coin3 {
+	margin-bottom: 10%;
 	width: 134px;
 	height: 134px;
 	background: url(../PNG/3k.png);
 }
 
+.coin3 .dis {
+	margin-bottom: 10%;
+	width: 134px;
+	height: 134px;
+	background: url(../PNG/dis_k.png);
+}

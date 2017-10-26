@@ -1,7 +1,7 @@
-var waterGlass = document.getElementById('glass');
+// var waterGlass = document.getElementById('waterGlass');
 var mineralWaterTitle = document.getElementById('title-mineral');
 var sweetWaterTitle = document.getElementById('title-sweet');
-
+   
 var machina = {
 	countCoins: 0,
 	currentState: 'InitialState',
@@ -75,7 +75,7 @@ function switchLightSweetTitle() {
 function chooseSweetWater() {
 	var sweetWaterPushButton = document.getElementsByClassName('push-button-sweet')[0];
 	sweetWaterPushButton.addEventListener("click", function(event) {
-		console.log('Func SweetWaterPushButton \n 	Event: ', event.target.id);
+		console.log('Func SweetWaterPushButton \n 	Event: ', event);
 		if(machina.sweetWaterTitleState == 'active') {
 			waterGlass.id = 'glassSweetlWater';
 			switchLightSweetTitle();
@@ -87,7 +87,7 @@ function chooseSweetWater() {
 function chooseMineralWater() {
 	var mineralWaterPushButton = document.getElementsByClassName('push-button-mineral')[0];
 	mineralWaterPushButton.addEventListener("click", function(event) {
-		console.log('Func MineralWaterPushButton \n 	Event: ', event.target.id);
+		console.log('Func MineralWaterPushButton \n 	Event: ', event);
 		if(machina.mineralWaterTitleState == 'active') {
 			waterGlass.id = 'glassMineralWater';
 			switchLightMineralTitle();
@@ -96,32 +96,49 @@ function chooseMineralWater() {
 	});
 }
 
+function uncloroCoin(coinValue) {
+	var coin1 = document.getElementsByClassName('coin1')[0];
+	var coin2 = document.getElementsByClassName('coin2')[0];
+	var coin3 = document.getElementsByClassName('coin3')[0];
+	console.log('coin1', coin1);
+	switch(coinValue) {
+		case 1:	coin3.style.backgroundImage = 'url(C:/Users/HP/test.github.io/JS_LJS/PNG/dis_k.png)';
+			break;
+		case 2: coin3.classList.toggle('dis');
+			coin2.classList.toggle('dis');
+			break; coin2.classList.toggle('dis');
+		case 3: coin1.classList.toggle('dis');
+			coin2.classList.toggle('dis');
+			coin3.classList.toggle('dis');
+			console.log('coin1', );
+	}
+}
+
 function onClickCoins() {
 	var coins = document.getElementsByClassName('coins')[0];
 
 	coins.addEventListener("click", function(event) {
 	console.log('Func Start \n 	Element Target: ', event.target.id);
-	switch(event.target.id) {
-		case 'coin-1': machina.addCoins(1);
+	switch(event.target.className) {
+		case 'coin1': machina.addCoins(1);
+			uncloroCoin(machina.countCoins);
 			break;
-		case 'coin-2': machina.addCoins(2);
+		case 'coin2': machina.addCoins(2);
+			uncloroCoin(machina.countCoins);
 			break;
-		case 'coin-3': machina.addCoins(3);
+		case 'coin3': machina.addCoins(3);
+			uncloroCoin(machina.countCoins);
 			break;
 		}
 		machina.changeState();
 	});
 }
 
-function pushButton() {
-	chooseSweetWater();
-	chooseMineralWater();	
-}
-
 /** Entry point */
 function start() {
 	onClickCoins();
-	pushButton();	
+	chooseSweetWater();
+	chooseMineralWater();	
 }
 
 start();

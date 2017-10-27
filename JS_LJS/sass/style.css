@@ -3,9 +3,12 @@ body {
 	margin: 0 auto;
 	background-color: #282828;
 }
-p {
+
+#textHelp {
 	font-family: "Bender";
 	font-size: 20pt;
+	background: transparent;
+	border: none;
 	color: white;
 }
 
@@ -15,8 +18,8 @@ p {
 }
 
 .help-title {
-	width: 300px;
-	height: 50px;
+	width: 340px;
+	height: 45px;
 	margin: 0 auto;
 }
 
@@ -51,6 +54,13 @@ p {
 .push-button-mineral {
 	position: absolute;
 	margin: 415px 0 0 350px;
+	width: 66px;
+	height: 64px;
+	background: url(../PNG/button.svg);
+}
+
+.push-button-mineral:hover {
+	background: url(../PNG/button_active.svg);
 }
 
 #title-sweet {
@@ -73,6 +83,13 @@ p {
 .push-button-sweet {
 	position: absolute;
 	margin: 472px 0 0 350px;
+	width: 66px;
+	height: 64px;
+	background: url(../PNG/button.svg);
+}
+
+.push-button-sweet:hover {
+	background: url(../PNG/button_active.svg);
 }
 
 #waterGlass {
@@ -115,40 +132,44 @@ p {
 	margin-bottom: 10%;
 	width: 134px;
 	height: 134px;
-	background: url(../PNG/1k.png);
+	background: url(../PNG/1K.svg);
 }
 
-.coin1 .dis {
-	margin-bottom: 10%;
-	width: 134px;
-	height: 134px;
-	background: url(../PNG/dis_k.png);
+.coin1:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .coin2 {
 	margin-bottom: 10%;
 	width: 134px;
 	height: 134px;
-	background: url(../PNG/2k.png);
+	background: url(../PNG/2K.svg);
 }
 
-.coin2 .dis {
-	margin-bottom: 10%;
-	width: 134px;
-	height: 134px;
-	background: url(../PNG/dis_k.png);
+.coin2:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .coin3 {
 	margin-bottom: 10%;
 	width: 134px;
 	height: 134px;
-	background: url(../PNG/3k.png);
+	background: url(../PNG/3K.svg);
 }
 
-.coin3 .dis {
+.coin3:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#dis {
 	margin-bottom: 10%;
 	width: 134px;
 	height: 134px;
-	background: url(../PNG/dis_k.png);
+	background: url(../PNG/disableK.svg);
 }

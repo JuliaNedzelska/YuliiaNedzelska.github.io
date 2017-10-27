@@ -4,11 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="sass/style.css">
+	<script src="https://js.cx/libs/animate.js"></script>
+
 </head>
 <body>
 	<div class="wrapper">
 		<div class="help-title">
-			<p id="help-info">CHOOSE COIN!</p>
+			<textArea id="textHelp" cols="100">ВЫБЕРИТЕ МОНЕТУ!!!</textArea>
 		</div>
 		<div class="coins">
 			<div class="coin1"></div>
@@ -18,21 +20,27 @@
 		<div class="machine">
 			<div class="water-field">
 				<div id="title-mineral"></div>
-				<div class="push-button-mineral">
-					<img src="PNG/button.png" alt="">
-				</div>
+				<div class="push-button-mineral"></div>
 			</div>
 			<div class="water-field">
 				<div id="title-sweet"></div>
-				<div class="push-button-sweet">
-					<img src="PNG/button.png" alt="">
-				</div>
+				<div class="push-button-sweet"></div>
 			</div>
 			<div class="water-glass-comtainer">
 				<div id="waterGlass"></div>
 			</div>
 		</div>
 	</div>
+
+	//bacground music
+	<embed src="./sound/bensound-jazzcomedy.mp3"
+		   autostart="true"
+		   loop="true"
+		   width="2"
+		   height="0">
+	</embed>
+
+	<script src="js/animation.js"></script>
 	<script src="js/script_fsm.js"></script>
 </body>
 </html>

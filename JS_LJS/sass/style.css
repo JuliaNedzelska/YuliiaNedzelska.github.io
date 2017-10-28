@@ -4,7 +4,13 @@ body {
 	background-color: #282828;
 }
 
+.help-title {
+	position: absolute;
+
+}
 #textHelp {
+	margin-top: 348px;
+	margin-left: 74px;
 	font-family: "Bender";
 	font-size: 20pt;
 	background: transparent;
@@ -13,8 +19,9 @@ body {
 }
 
 .wrapper {
-	margin-top: 5%;
-	position: relative;
+	margin: 0 auto;
+	width: 75%;
+	margin-top: 2%;
 }
 
 .help-title {
@@ -24,36 +31,35 @@ body {
 }
 
 .machine {
-	position: relative;
-	margin: 0 auto;
+	margin-left: 25%;
 	width: 641px;
-	height: 773px;
+	height: 730px;
 	background-image: url("../PNG/machine.png");
 }
 
 .water-field {
-	display: block;
+	position: relative;
 }
 
 #title-mineral {
 	position: absolute;
-	margin: 418px 0 0 68px;
+	margin: 390px 0 0 68px;
 	width: 284px;
-	height: 53px;
+	height: 56px;
 	background: url(../PNG/title_mineral_sprite.png) 0 0;
 }
 
 #title-mineral-active {
 	position: absolute;
-	margin: 418px 0 0 68px;
+	margin: 390px 0 0 68px;
 	width: 284px;
-	height: 53px;
-	background: url(../PNG/title_mineral_sprite.png) 0 72px;
+	height: 56px;
+	background: url(../PNG/title_mineral_sprite.png) 0 56px;
 }
 
 .push-button-mineral {
 	position: absolute;
-	margin: 415px 0 0 350px;
+	margin: 391px 0 0 350px;
 	width: 66px;
 	height: 64px;
 	background: url(../PNG/button.svg);
@@ -65,24 +71,24 @@ body {
 
 #title-sweet {
 	position: absolute;
-	margin: 474px 0 0 68px;
+	margin: 450px 0 0 68px;
 	width: 284px;
-	height: 53px;
+	height: 56px;
 	background: url(../PNG/title_sweet_sprite.png) 0 0;
 }
 
 #title-sweet-active {
 	position: absolute;
-	margin: 474px 0 0 68px;
+	margin: 450px 0 0 68px;
 	width: 284px;
-	height: 53px;
-	background: url(../PNG/title_sweet_sprite.png) 0 72px;
+	height: 56px;
+	background: url(../PNG/title_sweet_sprite.png) 0 56px;
 }
 
 
 .push-button-sweet {
 	position: absolute;
-	margin: 472px 0 0 350px;
+	margin: 451px 0 0 350px;
 	width: 66px;
 	height: 64px;
 	background: url(../PNG/button.svg);
@@ -95,7 +101,7 @@ body {
 #waterGlass {
 	position: absolute;
 	display: block;
-	margin-top: 92%;
+	margin-top: 87%;
 	margin-left: 42%;
 	width: 101px;
 	height: 108px;
@@ -105,7 +111,7 @@ body {
 #glassMineralWater {
 	position: absolute;
 	display: block;
-	margin-top: 92%;
+	margin-top: 87%;
 	margin-left: 42%;
 	width: 101px;
 	height: 108px;
@@ -115,7 +121,7 @@ body {
 #glassSweetlWater {
 	position: absolute;
 	display: block;
-	margin-top: 92%;
+	margin-top: 87%;
 	margin-left: 42%;
 	width: 101px;
 	height: 108px;
@@ -123,8 +129,9 @@ body {
 }
 
 .coins {
-	display: block;
+/*	display: block;*/
 	float: left;
+	width: 15%;
 	margin: 10% 0 0 5%;
 }
 

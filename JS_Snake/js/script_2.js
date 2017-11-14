@@ -191,20 +191,3 @@ function gameOver() {
 	console.log('Func gameOver');
 	clearInterval(startGame);
 }
-
-// function testCheckSnakeHeadPosition() {
-// 	console.log('Func testCheckSnakeHeadPosition');
-// 	var testFoodCell = [];
-// 	var testResult = 0;
-// 	var testValue = 1;
-
-// 	if (true) {
-// 		testResult = checkSnakeHeadPosition(gameField, snakeBody, [0, 1]);
-// 		if (testResult == [0, 3]) {
-// 			console.log('	headPosition', testResult);
-// 			testValue = 1;
-// 		} else return testValue = -1;
-// 	}
-// 	console.log('	testValue', testValue);
-// 	return testValue;
-// }

@@ -2,7 +2,6 @@ var mineralWaterTitle = document.getElementById('title-mineral');
 var sweetWaterTitle = document.getElementById('title-sweet');
  
 // object contains countCoins, mineralWaterTitleState and sweetWaterTitleState variables
-//
 var machina = {
 	countCoins: 0,
 	currentState: 'InitialState',
